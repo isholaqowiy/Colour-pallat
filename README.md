@@ -1,50 +1,15 @@
-# Colour Palette Extractor Telegram Bot
+# CollageGrid Bot 🖼📐
 
-Extract dominant colours from any image with HEX, RGB, and HSL values.
+A high-performance asynchronous Python Telegram grid collage compositor utilizing localized Pillow geometry coordinates manipulation to map irregular input image arrays onto balanced canvas frames.
 
-## Features
-- Extract 3, 6, 8, or 12 dominant colours
-- Returns HEX, RGB, HSL values + % coverage
-- Generates a visual palette swatch image
-- Zero external API dependencies
+## 🚀 Step-by-Step Render Production Provisioning Workflows
 
-## Local Setup
-```bash
-pip install -r requirements.txt
-export BOT_TOKEN="your_telegram_bot_token"
-python bot.py
-```
-
-## Deployment on Render.com
-
-### Step 1 – Create Telegram Bot
-1. Open Telegram, message `@BotFather`
-2. Send `/newbot`, follow prompts, copy your **BOT_TOKEN**
-
-### Step 2 – Push to GitHub
+### Step 1: Push Project Source Files Directly to your GitHub Repository Root
+Ensure that every execution source file component layout script module (`bot.py`, `handlers.py`, `database.py`, `config.py`, `layouts.py`, `collage_generator.py`, `utils.py`, `keyboards.py`, `requirements.txt`, etc.) sits immediately exposed inside your remote main branch directory indexing trace block tree. Do not encapsulate or isolate them into inner project subdirectories folders layouts:
 ```bash
 git init
 git add .
-git commit -m "Initial commit"
+git commit -m "Initialize structural footprint package baseline module for CollageGrid Engine"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/colour-palette-bot.git
+git remote add origin [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
 git push -u origin main
-```
-
-### Step 3 – Deploy on Render
-1. Go to [render.com](https://render.com) → **New** → **Background Worker**
-2. Connect GitHub and select your `colour-palette-bot` repo
-3. Configure:
-   - **Name:** `colour-palette-bot`
-   - **Environment:** `Python 3`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `python bot.py`
-4. Under **Environment Variables**, add:
-   - Key: `BOT_TOKEN` → Value: *(your token)*
-5. Click **Create Background Worker**
-
-### Step 4 – Verify
-- Send `/start` to your bot
-- Send any photo
-- Select number of colours
-- Receive palette image + colour codes!
