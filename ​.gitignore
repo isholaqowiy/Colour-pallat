@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+*.db
+temp_collages/
+venv/
+.DS_Store
+
